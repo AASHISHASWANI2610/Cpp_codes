@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+#include<conio.h>
+ void main()
+{
+  clrscr();
+  int array[10];
+  int i,val,pos;
+  printf("enter values for array");
+  for(i=0;i<5;i++)
+  {
+     scanf("%d",&array[i]);
+  }
+  printf("enter value to be inserted");
+  scanf("%d",&val);
+  printf("enter index no.value to stored");
+  scanf("%d",&pos);
+  for(i=pos;i<=5;i++)
+  {
+     array[i+1]=array[i];
+  }
+    array[pos]=val;
+  printf("new array\n");
+  for(i=0;i<=5;i++)
+  {
+  printf("%d\n",array[i]);
+  }
+  getch();
+}
+
+
+

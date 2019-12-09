@@ -1,0 +1,21 @@
+#include<stdio.h>
+ void main()
+ {
+   float p;
+   int t,r;
+   printf("enter principle:\n");
+   scanf("%d",&p);
+   printf("enter interest:\n");
+   scanf("%d",&t);
+   printf("enter time:\n");
+   scanf("%d",&t);
+   printf("SI=Rs.%f",simple(p,r,t));
+ }
+
+   float simple(float p,int r,int t)
+   {
+   float si=(p*r*t)/100;
+   return(si);
+   }
+
+
